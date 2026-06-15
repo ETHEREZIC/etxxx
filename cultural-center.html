@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Культурный центр | Самара</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: linear-gradient(135deg, #f5f0e1 0%, #e8dfce 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 24px;
+            padding: 40px 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 5px 12px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            backdrop-filter: blur(2px);
+            border: 1px solid rgba(200, 180, 140, 0.3);
+        }
+
+        .icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: gentlePulse 3s ease-in-out infinite;
+        }
+
+        @keyframes gentlePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        h1 {
+            font-size: 2.2em;
+            color: #3a2c1f;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #7a5a3a;
+            margin-bottom: 30px;
+            border-top: 2px solid #d4c4a8;
+            border-bottom: 2px solid #d4c4a8;
+            display: inline-block;
+            padding: 8px 20px;
+            font-style: italic;
+        }
+
+        .status {
+            background: #f0ebe0;
+            border-radius: 40px;
+            padding: 12px 20px;
+            margin: 25px 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9em;
+            color: #5c4b32;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            background: #c9a03d;
+            border-radius: 50%;
+            display: inline-block;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .coming-soon {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #8b6b42;
+            margin: 20px 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .description {
+            color: #5a4a34;
+            line-height: 1.6;
+            margin: 20px 0;
+            font-size: 1em;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .feature {
+            background: #f9f6ef;
+            padding: 8px 16px;
+            border-radius: 40px;
+            font-size: 0.85em;
+            color: #6b4e2e;
+            border: 1px solid #ddd0b8;
+        }
+
+        .contact {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #d4c4a8;
+            font-size: 0.9em;
+            color: #8f7a5c;
+        }
+
+        .contact a {
+            color: #8b6b42;
+            text-decoration: none;
+            border-bottom: 1px dotted;
+        }
+
+        .contact a:hover {
+            color: #c9a03d;
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 0.75em;
+            color: #b8a882;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="icon">
+            🎭
+        </div>
+        
+        <h1>Культурный центр<br>Самара</h1>
+        
+        <div class="subtitle">
+            Пространство для вдохновения и творчества
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            <span>Готовим открытие</span>
+        </div>
+
+        <div class="coming-soon">
+            Скоро здесь появится что-то удивительное
+        </div>
+
+        <div class="description">
+            Мы создаём место, где искусство, музыка, театр и литература<br>
+            собирают людей вместе в самом сердце Самары.
+        </div>
+
+        <div class="features">
+            <span class="feature">🎨 Выставки</span>
+            <span class="feature">🎭 Театр</span>
+            <span class="feature">🎵 Концерты</span>
+            <span class="feature">📚 Лекции</span>
+            <span class="feature">☕ Уютное кафе</span>
+        </div>
+
+        <div class="contact">
+            📍 ул. Куйбышева, 123<br>
+            📧 <a href="mailto:info@samaracultural.ru">info@samaracultural.ru</a><br>
+            📞 <a href="tel:+78461234567">+7 (846) 123-45-67</a>
+        </div>
+
+        <footer>
+            Следите за новостями — открытие весной 2026
+        </footer>
+    </div>
+</body>
+</html>
