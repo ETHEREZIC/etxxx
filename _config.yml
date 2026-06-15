@@ -1,0 +1,32 @@
+# Jekyll Configuration
+title: ETHEREZIC — архитектурное портфолио
+description: Цифровая мастерская архитектора. Параметрический дизайн, устойчивая архитектура, инновации.
+url: "" # ваш GitHub Pages URL
+baseurl: ""
+
+# Theme settings
+theme_mode: light # light или dark по умолчанию
+sidebar_collapsed: false
+
+# Collections / Data
+collections:
+  works:
+    output: true
+    permalink: /works/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /blog/:year/:month/:day/:title/
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules

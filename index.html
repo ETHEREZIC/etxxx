@@ -1,0 +1,21 @@
+---
+layout: default
+title: ETHEREZIC — цифровая мастерская архитектора
+---
+
+<div class="content-section" id="dynamic-content">
+    <!-- Контент загружается через JavaScript из data-атрибутов -->
+</div>
+
+<script>
+// Jekyll injects data as JSON
+const siteData = {
+    works: {{ site.works | jsonify }},
+    apps: {{ site.data.portfolio.apps | jsonify }},
+    posts: [
+        {% for post in site.posts limit:30 %}
+        { title: "{{ post.title }}", date: "{{ post.date | date: '%Y' }}", url: "{{ post.url }}", excerpt: "{{ post.excerpt | strip_html | truncate: 120 }}" },
+        {% endfor %}
+    ]
+};
+</script>
